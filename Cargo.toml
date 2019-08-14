@@ -1,0 +1,10 @@
+[package]
+name = "rust_poc_3"
+version = "0.1.0"
+authors = ["vms <michail.vms@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "rust_poc_3"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
