@@ -1,3 +1,11 @@
+## rust_poc_3
+
+```bash
+cargo build --target wasm32-unknown-unknow --release
+```
+
+produces module with only three imported functions:
+```bash
 (module
   (type (;0;) (func (param i32 i32)))
   (type (;1;) (func (param i32) (result i32)))
@@ -32,3 +40,4 @@
   (export "allocate" (func $allocate))
   (export "invoke" (func $invoke))
   (export "foo" (func $foo)))
+```
